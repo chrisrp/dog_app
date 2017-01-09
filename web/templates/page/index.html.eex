@@ -1,0 +1,8 @@
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}", name: "The dog app" %></h2>
+  <p class="lead">Just a page to show a nice dog.</p>
+</div>
+
+<div class="row marketing">
+  <img src="http://www.dogbreedinfo.com/images23/BelgianMalinoisShepherdDogAdonis.jpg"></img>
+</div>
