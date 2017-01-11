@@ -1,0 +1,6 @@
+* to generate the release the app must be compiled
+* the app_name-0.0.1.tar.gz is not generated, it is needed to go to rel/app_name/releases/0.0.1/app_name.tar.gz
+* It is needed to create the prod.secret.exs
+TODO:
+ 1. generate script to initialize in the init.d
+ 2. configure nginx
