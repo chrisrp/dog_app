@@ -5,6 +5,14 @@
 # is restricted to this project.
 use Mix.Config
 
+config :dog_app, DogApp.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "dog_app_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
+
+
 # Configures the endpoint
 config :dog_app, DogApp.Endpoint,
   url: [host: "localhost"],
@@ -17,6 +25,8 @@ config :dog_app, DogApp.Endpoint,
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
+
+config :dog_app, ecto_repos: [DogApp.Repo]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

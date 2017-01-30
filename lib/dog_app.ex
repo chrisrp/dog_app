@@ -10,6 +10,10 @@ defmodule DogApp do
     children = [
       # Start the endpoint when the application starts
       supervisor(DogApp.Endpoint, []),
+
+      # Start the Ecto repository
+      supervisor(DogApp.Repo, []),
+
       # Start your own worker by calling: DogApp.Worker.start_link(arg1, arg2, arg3)
       # worker(DogApp.Worker, [arg1, arg2, arg3]),
     ]
